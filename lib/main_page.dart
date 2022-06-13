@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: TextStyle(
                             fontSize: 18,
                             color: color.AppColor.homePageTitle,
-                            fontWeight: FontWeight.w700,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                       ),
@@ -103,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 children: [
                   Text(
-                    "Beginner Level!",
+                    "Beginner Level",
                     style: TextStyle(
                       fontSize: 14,
                       color: color.AppColor.profileBackground,
@@ -129,6 +129,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: const Align(
                   alignment: Alignment.centerLeft,
                   child: TabBar(
+                    labelStyle: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
                     labelPadding: EdgeInsets.only(left: 25, right: 25),
                     isScrollable: true,
                     labelColor: Colors.black,
@@ -255,7 +259,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         "SETUP A GOAL",
                                         style: TextStyle(
                                           fontSize: 16,
-                                          fontWeight: FontWeight.w700,
+                                          fontWeight: FontWeight.w500,
                                           color: color.AppColor.homePageTitle,
                                         ),
                                       ),
@@ -382,7 +386,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           height: 200.0,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Colors.deepPurpleAccent,
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Column(
@@ -494,424 +498,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 200.0,
                           // color: Colors.blueAccent,
                           decoration: BoxDecoration(
-                            color: Colors.greenAccent.withOpacity(1.0),
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                      bottom: 10,
-                                    ),
-                                    child: Icon(
-                                      Icons.playlist_add_check_circle_outlined,
-                                      color: color.AppColor.homePageTitle,
-                                      size: 45,
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    width: 10,
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.only(
-                                        bottom: 12, top: 10),
-                                    child: Text(
-                                      "You're Doing well\npaying off your loans",
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                        fontWeight: FontWeight.w700,
-                                        color: color.AppColor.cardTitle,
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(child: Container()),
-                                  Container(
-                                    padding: const EdgeInsets.only(
-                                      top: 0,
-                                    ),
-                                    child: Text(
-                                      "09-06-2018",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                        color: color.AppColor.cardTitle,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Container(
-                                padding: const EdgeInsets.only(
-                                  left: 55,
-                                ),
-                                child: Text(
-                                  "Since this time last year, you've contributed \$5,5678 toward your Sallie Mae Student Loan. Great work!",
-                                  style: TextStyle(
-                                    fontSize: 17,
-                                    color: color.AppColor.cardTitle,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Expanded(child: Container()),
-                                  Icon(
-                                    Icons.favorite,
-                                    color: color.AppColor.cardTitle,
-                                    size: 40,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 15,
-                        ),
-                      ],
-                    ),
-                    ListView(
-                      scrollDirection: Axis.vertical,
-                      children: <Widget>[
-                        Container(
-                          margin: const EdgeInsets.only(
-                            left: 1,
-                            right: 1,
-                          ),
-                          padding: const EdgeInsets.only(
-                            top: 15,
-                            left: 15,
-                            right: 15,
-                          ),
-                          height: 200.0,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.playlist_add_check_circle_outlined,
-                                    color: color.AppColor.homePageTitle,
-                                    size: 45,
-                                  ),
-                                  const SizedBox(
-                                    width: 10,
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.only(
-                                      bottom: 12,
-                                    ),
-                                    child: Text(
-                                      "Small stuff adds up!",
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                        fontWeight: FontWeight.w700,
-                                        color: color.AppColor.cardTitle,
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(child: Container()),
-                                  Container(
-                                    padding: const EdgeInsets.only(
-                                      bottom: 12,
-                                    ),
-                                    child: Text(
-                                      "09-06-2018",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                        color: color.AppColor.cardTitle,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Container(
-                                padding: const EdgeInsets.only(
-                                  left: 55,
-                                ),
-                                child: Text(
-                                  "Last month, you mode \$42 transactions less than \$5, spending a total of \$147. Want to cut down on frivolous spending?",
-                                  style: TextStyle(
-                                    fontSize: 17,
-                                    color: color.AppColor.cardTitle,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    height: 35,
-                                    width: 130,
-                                    margin: const EdgeInsets.only(
-                                        left: 55.0, top: 6),
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(30),
-                                      color: color.AppColor.cardTitle,
-                                    ),
-                                    child: Align(
-                                      alignment: Alignment.center,
-                                      child: Text(
-                                        "SETUP A GOAL",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w700,
-                                          color: color.AppColor.homePageTitle,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(child: Container()),
-                                  Icon(
-                                    Icons.favorite_border_sharp,
-                                    color: color.AppColor.cardTitle,
-                                    size: 40,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 15,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(
-                            left: 1,
-                            right: 1,
-                          ),
-                          padding: const EdgeInsets.only(
-                            top: 10,
-                            left: 15,
-                            right: 15,
-                          ),
-                          height: 200.0,
-                          // color: Colors.blueAccent,
-                          decoration: BoxDecoration(
-                            color: Colors.greenAccent.withOpacity(1.0),
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                      bottom: 10,
-                                    ),
-                                    child: Icon(
-                                      Icons.playlist_add_check_circle_outlined,
-                                      color: color.AppColor.homePageTitle,
-                                      size: 45,
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    width: 10,
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.only(
-                                        bottom: 12, top: 10),
-                                    child: Text(
-                                      "You're Doing well\npaying off your loans",
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                        fontWeight: FontWeight.w700,
-                                        color: color.AppColor.cardTitle,
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(child: Container()),
-                                  Container(
-                                    padding: const EdgeInsets.only(
-                                      top: 0,
-                                    ),
-                                    child: Text(
-                                      "09-06-2018",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                        color: color.AppColor.cardTitle,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Container(
-                                padding: const EdgeInsets.only(
-                                  left: 55,
-                                ),
-                                child: Text(
-                                  "Since this time last year, you've contributed \$5,5678 toward your Sallie Mae Student Loan. Great work!",
-                                  style: TextStyle(
-                                    fontSize: 17,
-                                    color: color.AppColor.cardTitle,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Expanded(child: Container()),
-                                  Icon(
-                                    Icons.favorite,
-                                    color: color.AppColor.cardTitle,
-                                    size: 40,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 15,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(
-                            left: 1,
-                            right: 1,
-                          ),
-                          padding: const EdgeInsets.only(
-                            top: 15,
-                            left: 15,
-                            right: 15,
-                          ),
-                          height: 200.0,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.playlist_add_check_circle_outlined,
-                                    color: color.AppColor.homePageTitle,
-                                    size: 45,
-                                  ),
-                                  const SizedBox(
-                                    width: 10,
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.only(
-                                      bottom: 12,
-                                    ),
-                                    child: Text(
-                                      "Small stuff adds up!",
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                        fontWeight: FontWeight.w700,
-                                        color: color.AppColor.cardTitle,
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(child: Container()),
-                                  Container(
-                                    padding: const EdgeInsets.only(
-                                      bottom: 12,
-                                    ),
-                                    child: Text(
-                                      "09-06-2018",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                        color: color.AppColor.cardTitle,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Container(
-                                padding: const EdgeInsets.only(
-                                  left: 55,
-                                ),
-                                child: Text(
-                                  "Last month, you mode \$42 transactions less than \$5, spending a total of \$147. Want to cut down on frivolous spending?",
-                                  style: TextStyle(
-                                    fontSize: 17,
-                                    color: color.AppColor.cardTitle,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    height: 35,
-                                    width: 130,
-                                    margin: const EdgeInsets.only(
-                                        left: 55.0, top: 6),
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(30),
-                                      color: color.AppColor.cardTitle,
-                                    ),
-                                    child: Align(
-                                      alignment: Alignment.center,
-                                      child: Text(
-                                        "SETUP A GOAL",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w700,
-                                          color: color.AppColor.homePageTitle,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(child: Container()),
-                                  Icon(
-                                    Icons.favorite_border_sharp,
-                                    color: color.AppColor.cardTitle,
-                                    size: 40,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 15,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(
-                            left: 1,
-                            right: 1,
-                          ),
-                          padding: const EdgeInsets.only(
-                            top: 10,
-                            left: 15,
-                            right: 15,
-                          ),
-                          height: 200.0,
-                          // color: Colors.blueAccent,
-                          decoration: BoxDecoration(
-                            color: Colors.greenAccent.withOpacity(1.0),
+                            color: Colors.pinkAccent.withOpacity(0.7),
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Column(
@@ -1089,7 +676,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         "SETUP A GOAL",
                                         style: TextStyle(
                                           fontSize: 16,
-                                          fontWeight: FontWeight.w700,
+                                          fontWeight: FontWeight.w500,
                                           color: color.AppColor.homePageTitle,
                                         ),
                                       ),
@@ -1216,7 +803,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           height: 200.0,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Colors.deepPurpleAccent,
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Column(
@@ -1328,7 +915,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 200.0,
                           // color: Colors.blueAccent,
                           decoration: BoxDecoration(
-                            color: Colors.greenAccent.withOpacity(1.0),
+                            color: Colors.pinkAccent.withOpacity(0.7),
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Column(
@@ -1506,7 +1093,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         "SETUP A GOAL",
                                         style: TextStyle(
                                           fontSize: 16,
-                                          fontWeight: FontWeight.w700,
+                                          fontWeight: FontWeight.w500,
                                           color: color.AppColor.homePageTitle,
                                         ),
                                       ),
@@ -1633,7 +1220,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           height: 200.0,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Colors.deepPurpleAccent,
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Column(
@@ -1745,7 +1332,424 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 200.0,
                           // color: Colors.blueAccent,
                           decoration: BoxDecoration(
+                            color: Colors.pinkAccent.withOpacity(0.7),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                      bottom: 10,
+                                    ),
+                                    child: Icon(
+                                      Icons.playlist_add_check_circle_outlined,
+                                      color: color.AppColor.homePageTitle,
+                                      size: 45,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 10,
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(
+                                        bottom: 12, top: 10),
+                                    child: Text(
+                                      "You're Doing well\npaying off your loans",
+                                      style: TextStyle(
+                                        fontSize: 22,
+                                        fontWeight: FontWeight.w700,
+                                        color: color.AppColor.cardTitle,
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(child: Container()),
+                                  Container(
+                                    padding: const EdgeInsets.only(
+                                      top: 0,
+                                    ),
+                                    child: Text(
+                                      "09-06-2018",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: color.AppColor.cardTitle,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Container(
+                                padding: const EdgeInsets.only(
+                                  left: 55,
+                                ),
+                                child: Text(
+                                  "Since this time last year, you've contributed \$5,5678 toward your Sallie Mae Student Loan. Great work!",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: color.AppColor.cardTitle,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 5,
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Expanded(child: Container()),
+                                  Icon(
+                                    Icons.favorite,
+                                    color: color.AppColor.cardTitle,
+                                    size: 40,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 15,
+                        ),
+                      ],
+                    ),
+                    ListView(
+                      scrollDirection: Axis.vertical,
+                      children: <Widget>[
+                        Container(
+                          margin: const EdgeInsets.only(
+                            left: 1,
+                            right: 1,
+                          ),
+                          padding: const EdgeInsets.only(
+                            top: 15,
+                            left: 15,
+                            right: 15,
+                          ),
+                          height: 200.0,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.playlist_add_check_circle_outlined,
+                                    color: color.AppColor.homePageTitle,
+                                    size: 45,
+                                  ),
+                                  const SizedBox(
+                                    width: 10,
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(
+                                      bottom: 12,
+                                    ),
+                                    child: Text(
+                                      "Small stuff adds up!",
+                                      style: TextStyle(
+                                        fontSize: 22,
+                                        fontWeight: FontWeight.w700,
+                                        color: color.AppColor.cardTitle,
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(child: Container()),
+                                  Container(
+                                    padding: const EdgeInsets.only(
+                                      bottom: 12,
+                                    ),
+                                    child: Text(
+                                      "09-06-2018",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: color.AppColor.cardTitle,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Container(
+                                padding: const EdgeInsets.only(
+                                  left: 55,
+                                ),
+                                child: Text(
+                                  "Last month, you mode \$42 transactions less than \$5, spending a total of \$147. Want to cut down on frivolous spending?",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: color.AppColor.cardTitle,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 5,
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    height: 35,
+                                    width: 130,
+                                    margin: const EdgeInsets.only(
+                                        left: 55.0, top: 6),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30),
+                                      color: color.AppColor.cardTitle,
+                                    ),
+                                    child: Align(
+                                      alignment: Alignment.center,
+                                      child: Text(
+                                        "SETUP A GOAL",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                          color: color.AppColor.homePageTitle,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(child: Container()),
+                                  Icon(
+                                    Icons.favorite_border_sharp,
+                                    color: color.AppColor.cardTitle,
+                                    size: 40,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(
+                            left: 1,
+                            right: 1,
+                          ),
+                          padding: const EdgeInsets.only(
+                            top: 10,
+                            left: 15,
+                            right: 15,
+                          ),
+                          height: 200.0,
+                          // color: Colors.blueAccent,
+                          decoration: BoxDecoration(
                             color: Colors.greenAccent.withOpacity(1.0),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                      bottom: 10,
+                                    ),
+                                    child: Icon(
+                                      Icons.playlist_add_check_circle_outlined,
+                                      color: color.AppColor.homePageTitle,
+                                      size: 45,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 10,
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(
+                                        bottom: 12, top: 10),
+                                    child: Text(
+                                      "You're Doing well\npaying off your loans",
+                                      style: TextStyle(
+                                        fontSize: 22,
+                                        fontWeight: FontWeight.w700,
+                                        color: color.AppColor.cardTitle,
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(child: Container()),
+                                  Container(
+                                    padding: const EdgeInsets.only(
+                                      top: 0,
+                                    ),
+                                    child: Text(
+                                      "09-06-2018",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: color.AppColor.cardTitle,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Container(
+                                padding: const EdgeInsets.only(
+                                  left: 55,
+                                ),
+                                child: Text(
+                                  "Since this time last year, you've contributed \$5,5678 toward your Sallie Mae Student Loan. Great work!",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: color.AppColor.cardTitle,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 5,
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Expanded(child: Container()),
+                                  Icon(
+                                    Icons.favorite,
+                                    color: color.AppColor.cardTitle,
+                                    size: 40,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(
+                            left: 1,
+                            right: 1,
+                          ),
+                          padding: const EdgeInsets.only(
+                            top: 15,
+                            left: 15,
+                            right: 15,
+                          ),
+                          height: 200.0,
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurpleAccent,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.playlist_add_check_circle_outlined,
+                                    color: color.AppColor.homePageTitle,
+                                    size: 45,
+                                  ),
+                                  const SizedBox(
+                                    width: 10,
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(
+                                      bottom: 12,
+                                    ),
+                                    child: Text(
+                                      "Small stuff adds up!",
+                                      style: TextStyle(
+                                        fontSize: 22,
+                                        fontWeight: FontWeight.w700,
+                                        color: color.AppColor.cardTitle,
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(child: Container()),
+                                  Container(
+                                    padding: const EdgeInsets.only(
+                                      bottom: 12,
+                                    ),
+                                    child: Text(
+                                      "09-06-2018",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: color.AppColor.cardTitle,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Container(
+                                padding: const EdgeInsets.only(
+                                  left: 55,
+                                ),
+                                child: Text(
+                                  "Last month, you mode \$42 transactions less than \$5, spending a total of \$147. Want to cut down on frivolous spending?",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: color.AppColor.cardTitle,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 5,
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    height: 35,
+                                    width: 130,
+                                    margin: const EdgeInsets.only(
+                                        left: 55.0, top: 6),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30),
+                                      color: color.AppColor.cardTitle,
+                                    ),
+                                    child: Align(
+                                      alignment: Alignment.center,
+                                      child: Text(
+                                        "SETUP A GOAL",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w700,
+                                          color: color.AppColor.homePageTitle,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(child: Container()),
+                                  Icon(
+                                    Icons.favorite_border_sharp,
+                                    color: color.AppColor.cardTitle,
+                                    size: 40,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(
+                            left: 1,
+                            right: 1,
+                          ),
+                          padding: const EdgeInsets.only(
+                            top: 10,
+                            left: 15,
+                            right: 15,
+                          ),
+                          height: 200.0,
+                          // color: Colors.blueAccent,
+                          decoration: BoxDecoration(
+                            color: Colors.pinkAccent.withOpacity(0.7),
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Column(
