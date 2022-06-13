@@ -1,16 +1,16 @@
-import 'dart:convert';
-import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'second_page.dart';
 import 'colors.dart' as color;
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -255,12 +255,17 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                     child: Align(
                                       alignment: Alignment.center,
-                                      child: Text(
-                                        "SETUP A GOAL",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w500,
-                                          color: color.AppColor.homePageTitle,
+                                      child: InkWell(
+                                        onTap: () {
+                                          Get.to(() => const SecondPage());
+                                        },
+                                        child: Text(
+                                          "SETUP A GOAL",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500,
+                                            color: color.AppColor.homePageTitle,
+                                          ),
                                         ),
                                       ),
                                     ),

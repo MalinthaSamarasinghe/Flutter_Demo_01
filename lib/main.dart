@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
         // This is the theme of the application.
         brightness: Brightness.light,
       ),
-      home: const MyHomePage(),
+      home: const HomePage(),
       routes: <String, WidgetBuilder>{
-        '/myHomePage': (context) => const MyHomePage(),
+        '/homePage': (context) => const HomePage(),
       },
     );
   }

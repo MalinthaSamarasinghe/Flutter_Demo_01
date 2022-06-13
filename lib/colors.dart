@@ -6,4 +6,5 @@ class AppColor {
   static Color homePageTitle = const Color(0xFF000000);
   static Color cardTitle = const Color(0xFFFFFFFF);
   static Color homePageBackground = const Color(0xFFfbfcff);
+  static Color watchColor = const Color(0xFF795548);
 }
